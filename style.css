@@ -1,0 +1,65 @@
+/* すべてのページに共通のスタイル */
+body {
+  font-family: 'Arial', sans-serif;
+  font-size: 16px;
+}
+
+/* ヘッダーのスタイル */
+header {
+  background-color: #3498db;
+}
+
+/* ナビゲーションのスタイル */
+nav {
+  background-color: #2ecc71;
+  display: flex; /* 更新: flex を使用して水平に配置 */
+  justify-content: space-around; /* 更新: ナビゲーション項目の均等な配置 */
+  align-items: center;
+}
+
+/* ナビゲーション内の画像のスタイル */
+nav img {
+  width: 30px; /* 更新: ナビゲーション内の画像のサイズを調整 */
+}
+
+/* メインセクションのスタイル */
+main {
+  background-color: #ecf0f1;
+  font-size: 18px;
+}
+
+/* フッターのスタイル */
+footer {
+  background-color: #34495e;
+}
+
+/* h1 のスタイル */
+h1 {
+  text-align: center;
+  font-family: 'Helvetica', sans-serif;
+  color: #e74c3c;
+}
+
+/* p のスタイル */
+p {
+  line-height: 1.5;
+}
+
+/* grid クラスのスタイル: 2列のグリッド */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 更新: 2列の等幅グリッド */
+  gap: 20px; /* 更新: グリッド間のスペース */
+}
+
+/* grid クラス内の画像のスタイル: 幅を 100% に設定 */
+.grid img {
+  width: 100%;
+}
+
+/* flex クラスのスタイル: flex を使用 */
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
