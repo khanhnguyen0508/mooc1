@@ -1,63 +1,63 @@
-/* すべてのページに共通のスタイル */
+/* Всеобщий стиль для всех страниц */
 body {
   font-family: 'Arial', sans-serif;
   font-size: 16px;
 }
 
-/* ヘッダーのスタイル */
+/* Стиль заголовка */
 header {
   background-color: #5faee3;
 }
 
-/* ナビゲーションのスタイル */
+/* Стиль навигации */
 nav {
   background-color: #5bda91;
-  display: flex; /* 更新: flex を使用して水平に配置 */
-  justify-content: space-around; /* 更新: ナビゲーション項目の均等な配置 */
+  display: flex; /* Обновлено: использовать flex для горизонтального расположения */
+  justify-content: space-around; /* Обновлено: равномерное расположение элементов навигации */
   align-items: center;
 }
 
-/* ナビゲーション内の画像のスタイル */
+/* Стиль изображений в навигации */
 nav img {
-  width: 30px; /* 更新: ナビゲーション内の画像のサイズを調整 */
+  width: 30px; /* Обновлено: изменить размер изображений в навигации */
 }
 
-/* メインセクションのスタイル */
+/* Стиль основной секции */
 main {
   background-color: #ecf0f1;
   font-size: 18px;
 }
 
-/* フッターのスタイル */
+/* Стиль футера */
 footer {
   background-color: #263545;
 }
 
-/* h1 のスタイル */
+/* Стиль заголовка h1 */
 h1 {
   text-align: center;
   font-family: 'Helvetica', sans-serif;
   color: #e74c3c;
 }
 
-/* p のスタイル */
+/* Стиль абзацев */
 p {
   line-height: 1.5;
 }
 
-/* grid クラスのスタイル: 2列のグリッド */
+/* Стиль класса grid: сетка из 2 столбцов */
 .grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* 更新: 2列の等幅グリッド */
-  gap: 20px; /* 更新: グリッド間のスペース */
+  grid-template-columns: repeat(2, 1fr); /* Обновлено: сетка из двух равных столбцов */
+  gap: 20px; /* Обновлено: промежутки между столбцами */
 }
 
-/* grid クラス内の画像のスタイル: 幅を 100% に設定 */
+/* Стиль изображений в классе grid: установить ширину на 100% */
 .grid img {
   width: 100%;
 }
 
-/* flex クラスのスタイル: flex を使用 */
+/* Стиль класса flex: использовать flex */
 .flex {
   display: flex;
   flex-wrap: wrap;
