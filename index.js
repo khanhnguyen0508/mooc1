@@ -1,68 +1,68 @@
-// 画像とテキストを更新する関数
+// Функция для обновления нескольких изображений и текста в файле JavaScript и проверки возникновения события
 function upDate(previewPic) {
-    // イベントがトリガーされているかを確認するためにコンソールにメッセージを表示
+    // Выводим сообщение на консоль, чтобы узнать, сработало событие или нет, если нет, то выдается ошибка
     console.log("画像がホバーされました！");
 
-    // previewPicのaltおよびsrc属性を取得
+    // Получаем атрибуты alt и src PreviewPic перед получением идентификатора PreviewPic.
     var altText = previewPic.alt;
     var imageUrl = previewPic.src;
 
-    // previewPicのIDを取得
+    // Получаем идентификатор PreviewPic и готовимся копировать и обновлять информацию
     var imageId = previewPic.id;
 
-    // previewPic変数に関する情報をコンソールにログ
+    // Записываем информацию о переменной PreviewPic в консоль
     console.log("Altテキスト:", altText);
     console.log("画像のソース:", imageUrl);
 
-    // 'hoveredImage'というIDを持つ要素のテキストを更新
+    // Обновляем текст и фоновое изображение элемента с идентификатором «hoveredImage»
     document.getElementById(imageId).textContent = altText;
 
-    // 'hoveredImage'というIDを持つ要素の背景画像を更新
+    // Обновляем фоновое изображение и текст элемента с идентификатором «hoveredImage»
     document.getElementById(imageId).style.backgroundImage = 'url(' + imageUrl + ')';
 }
 
-// 変更を元に戻す関数
+//функция отменяет изменения, внесенные во время выполнения
 function undo() {
-    // 背景画像を元の値にリセット
+    //Сбрасываем обои до исходных. Тогда есть обои
     var imageId = event.currentTarget.id;
     document.getElementById(imageId).style.backgroundImage = "url('')";
 
-    // テキストを元の値にリセット
+    // возвращаем текст к оригиналу
     document.getElementById(imageId).textContent = "画像にホバーして表示します。";
 }
 
-// Add listeners for focus and blur events
+// Добавляем прослушиватели событий фокуса и размытия
 for (var i = 1; i <= 6; i++) {
     var imageId = "hoveredImage" + i;
 
     document.getElementById(imageId).addEventListener('focus', function () {
-        // Your focus event code here
+        // Добавляем прослушиватель событий загрузки
         console.log("Image focused");
     });
 
     document.getElementById(imageId).addEventListener('blur', function () {
-        // Your blur event code here
+        // Здесь находится код события загрузки
         console.log("Image blurred");
     });
 }
 
-// Add onload event listener
+// Функция для добавления атрибута tabindex
 window.onload = function () {
-    // Your onload event code here
+    // Код добавляет атрибут tabindex
     console.log("Page loaded");
 };
 
-// Function for adding tabindex attribute
+// Проходим по каждому изображению и добавляем атрибут tabindex
 function addTabFocus() {
-    // Code to add tabindex attribute
+    // Здесь находится ваш нечеткий код события
 }
 
-// Loop through each image and add tabindex attribute
+// Проходим по каждому изображению и добавляем атрибут tabindex
 var images = document.querySelectorAll('img');
 
 for (var i = 0; i < images.length; i++) {
     images[i].addEventListener('focus', addTabFocus);
     images[i].addEventListener('blur', function () {
-        // Your blur event code here
+        // Поместите сюда нечеткий код события
     });
 }
