@@ -6,12 +6,12 @@ body {
 
 /* ヘッダーのスタイル */
 header {
-  background-color: #3498db;
+  background-color: #5faee3;
 }
 
 /* ナビゲーションのスタイル */
 nav {
-  background-color: #2ecc71;
+  background-color: #5bda91;
   display: flex; /* 更新: flex を使用して水平に配置 */
   justify-content: space-around; /* 更新: ナビゲーション項目の均等な配置 */
   align-items: center;
@@ -30,7 +30,7 @@ main {
 
 /* フッターのスタイル */
 footer {
-  background-color: #34495e;
+  background-color: #263545;
 }
 
 /* h1 のスタイル */
